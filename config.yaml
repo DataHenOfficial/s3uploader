@@ -5,8 +5,8 @@ input_vars:
   - name: AWS_ACCESS_KEY_ID
     required: true
   - name: AWS_SECRET_ACCESS_KEY
+    type: secret
     required: true
-    secret: true
   - name: AWS_S3_BUCKET_NAME
     required: true
   - name: AWS_S3_TARGET_DIRECTORY
