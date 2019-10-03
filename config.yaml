@@ -1,9 +1,15 @@
 scraper_image: gcr.io/answers-engine-cloud/tordatascience-scraper-worker-s3cmd
 seeder:
   file: ./seeder/seeder.rb
-env_vars:
+input_vars:
   - name: AWS_ACCESS_KEY_ID
+    required: true
   - name: AWS_SECRET_ACCESS_KEY
+    required: true
+    secret: true
   - name: AWS_S3_BUCKET_NAME
+    required: true
   - name: AWS_S3_TARGET_DIRECTORY
+    required: true
   - name: SCRAPERS_TO_EXPORT
+    required: true
