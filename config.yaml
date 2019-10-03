@@ -12,4 +12,5 @@ input_vars:
   - name: AWS_S3_TARGET_DIRECTORY
     required: true
   - name: SCRAPERS_TO_EXPORT
+    description: "Enter the scraper names to upload, separated by comma. example: scraper1,scraper2. This will find the exports and upload them ot S3."
     required: true
